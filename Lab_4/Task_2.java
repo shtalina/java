@@ -5,7 +5,7 @@ public class Task_2 {
         double sum = 1;
         for (int i = 2; i <= 10000; i++) {
             if (i % 2 == 0) {
-                System.out.println(Math.pow(i, -1) + " here ");
+                System.out.println(Math.pow(i, -1) + " minus ");
                 sum -= Math.pow(i, -1);
             }
             else {            
