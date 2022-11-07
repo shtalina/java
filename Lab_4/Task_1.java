@@ -1,16 +1,29 @@
-package Lab_4;
+package lab_4;
 
+import java.util.Scanner;
 public class Task_1 {
-    public static void main(String[] args) {
-        int n = 2;
-        for (int a = 1; a < 100; a++) {
-            for (int b = 1; b < 100; b++) {
-                for (int c = 1; c < 100; c++) {
-                    if (Math.pow(a, n) + Math.pow(b, n) == Math.pow(c, n))
-                        System.out.println(a + "+" + b + "=" + c);
+   public static void main(String[] args){
+     int a,b,c,n;
+     Scanner sc = new Scanner(System.in);
+     n = sc.nextInt();
+     if ( n < 0 || n > 2) {
+        System.out.print("Решений нет"); 
+     }else{
+            for(int i = 1;i<100;i++){
+                for(int j=1;j<100;j++){
+                    for(int k=1;k<100;k++){
+                        a =(int) Math.pow(i, n);
+                        b =(int) Math.pow(j, n);
+                        c =(int) Math.pow(k, n);
+                        if (a+b == c){
+                            System.out.println(i+"^"+n+"^"+"+"+j+"^"+n+"="+k+"^"+n);
+                        }
+          
+                    }
                 }
             }
         }
+
+    sc.close();        
     }
-    
 }
