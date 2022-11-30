@@ -1,3 +1,4 @@
+//credit
 package lab_6;
 
 import java.util.Scanner;
